@@ -283,7 +283,7 @@ public class SpecificationImpl extends ParameterAwareImpl
     protected static File getSerializedFile(String systemID) {
         ApplicationScope scope =
             CycleUtil.getServiceCycle().getApplicationScope();
-        String cachePath = scope.getRealPath("WEB-INF/.mayaaSpecCache");
+        String cachePath = scope.getRealPath("/WEB-INF/.mayaaSpecCache");
         File cacheDir = new File(cachePath);
         cacheDir.mkdirs();
         return new File(cacheDir,
